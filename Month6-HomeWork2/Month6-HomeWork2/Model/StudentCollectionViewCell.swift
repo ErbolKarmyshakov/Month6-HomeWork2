@@ -26,6 +26,7 @@ class StudentCollectionViewCell: UICollectionViewCell {
 
     private let studentSurName: UILabel = {
         let view = UILabel()
+        view.numberOfLines = 0
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -53,7 +54,7 @@ class StudentCollectionViewCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             studentImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
             studentImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            studentImage.heightAnchor.constraint(equalToConstant: 100),
+            studentImage.heightAnchor.constraint(equalToConstant: 80),
             studentImage.widthAnchor.constraint(equalToConstant: 100)
         ])
     }
@@ -72,7 +73,7 @@ class StudentCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(studentSurName)
         NSLayoutConstraint.activate([
             studentSurName.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-            studentSurName.leadingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
+            studentSurName.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
             studentSurName.heightAnchor.constraint(equalToConstant: 100),
             studentSurName.widthAnchor.constraint(equalToConstant: 100)
         ])
@@ -81,5 +82,4 @@ class StudentCollectionViewCell: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }

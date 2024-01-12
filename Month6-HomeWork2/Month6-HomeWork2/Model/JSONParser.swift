@@ -9,7 +9,7 @@ import Foundation
 
 struct JSONParser {
     
-   private  let decoder = JSONDecoder()
+    let decoder = JSONDecoder()
     
     func getStudent(completion: @escaping ([Student]) -> Void) {
         if let path = Bundle.main.path(forResource: "Student", ofType: "json") {

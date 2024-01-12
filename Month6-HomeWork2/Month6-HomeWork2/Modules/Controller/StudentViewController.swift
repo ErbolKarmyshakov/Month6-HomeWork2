@@ -19,6 +19,9 @@ class StudentViewController: UIViewController {
     
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        layout.itemSize = .init(width: 250, height: 200)
+        layout.minimumLineSpacing = 10
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .brown
@@ -67,16 +70,15 @@ extension StudentViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! StudentCollectionViewCell
         let item = students[indexPath.item]
         cell.initCellData(item)
-        cell.backgroundColor = .systemGray
         return cell
     }
 }
     
 extension StudentViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (view.frame.width - 58) / 2, height: 100)
+        return CGSize(width: collectionView.frame.width, height: 100)
     }
-    }
+}
 
 
 

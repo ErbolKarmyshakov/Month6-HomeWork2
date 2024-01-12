@@ -1,50 +1,50 @@
 [
-{
+    {
         "studentName": "Erbol",
         "studentSurName": "Karmyshakov",
-        "StudentImage": "student"
+        "studentImage": "person"
     },
     
     {
         "studentName": "Dariya",
         "studentSurName": "Kalmyrzaeva",
-        "StudentImage": "student"
+        "studentImage": "person"
     },
     
     {
         "studentName": "Isa",
         "studentSurName": "Melsov",
-        "StudentImage": "student"
+        "studentImage": "person"
     },
     
     {
         "studentName": "Maksat",
         "studentSurName": "Edil",
-        "StudentImage": "person"
+        "studentImage": "person"
     },
     
     {
         "studentName": "Maksat",
         "studentSurName": "Edil",
-        "StudentImage": "person"
+        "studentImage": "person"
     },
     
     {
         "studentName": "Maksat",
         "studentSurName": "Edil",
-        "StudentImage": "person"
+        "studentImage": "person"
     },
     
     {
         "studentName": "Maksat",
         "studentSurName": "Edil",
-        "StudentImage": "person"
+        "studentImage": "person"
     },
     
     {
         "studentName": "Maksat",
         "studentSurName": "Edil",
-        "StudentImage": "person"
+        "studentImage": "person"
     }
 ]
  
